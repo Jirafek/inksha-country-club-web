@@ -93,3 +93,26 @@ html {
 .slab {
   font-family: 'MontaguSlab';
 }
+
+@keyframes arrowAnimation {
+  0% {
+    margin-left: -300px;
+  }
+  50% {
+    margin-left: -400px;
+  }
+  100% {
+    margin-left: -300px;
+  }
+}
+
+.animate-aroow {
+  animation: arrowAnimation 5s infinite;
+}
+
+.gradient_title {
+  background: linear-gradient(90deg, #9E835F 400%, #C1AA8B 500%, #F4EADC 14%);
+  -webkit-background-clip: text; /* для Safari */
+  -webkit-text-fill-color: transparent; /* для Safari */
+  color: #AB8E67; /* запасной цвет текста, если браузер не поддерживает background-clip */
+}
